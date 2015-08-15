@@ -3,6 +3,8 @@ package one;
 
 public class ProductGrid {
 
+    public static int  reach = 4 ;
+
     public static int compute(int[][] grid)
     {
         int maxProduct = 0 ;
@@ -25,7 +27,7 @@ public class ProductGrid {
         int product =1 ;
 
         int height = height(grid) ;
-        for(int index = 0 ; index <4 ;index++)
+        for(int index = 0 ; index <reach;index++)
         {
             if(yCoordinate +index < height)
             {
@@ -39,7 +41,7 @@ public class ProductGrid {
         int product = 1 ;
         int width = width(grid);
 
-        for(int index = 0 ; index <4 ;index++)
+        for(int index = 0 ; index <reach ;index++)
         {
             if(xCoordinate +index < width)
             {
@@ -55,7 +57,7 @@ public class ProductGrid {
         int product = 1 ;
         int width = width(grid);
         int height = grid.length ;
-        for(int index = 0 ; index <4 ;index++)
+        for(int index = 0 ; index <reach ;index++)
         {
             if(xCoordinate +index < width && yCoordinate +index < height)
             {
@@ -69,7 +71,7 @@ public class ProductGrid {
         int product = 1 ;
         int width = width(grid);
         int height = height(grid);
-        for(int index = 0 ; index <4 ;index++)
+        for(int index = 0 ; index <reach ;index++)
         {
             if(xCoordinate -index >= 0 && yCoordinate +index < height)
             {
