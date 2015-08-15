@@ -2,9 +2,7 @@
 import one.ProductGrid ;
 import junit.framework.TestCase;
 import org.junit.Test ;
-/**
- * Created by nour on 8/15/2015.
- */
+
 
 import java.io.BufferedReader;
 import java.io.FileReader;
